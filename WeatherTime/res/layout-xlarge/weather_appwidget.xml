@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/widget_layout"
+	android:layout_width="fill_parent" 
+	android:layout_height="fill_parent"	
+	>
+    
+    <ImageView
+        android:id="@+id/day_night"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scaleType="fitXY"
+        android:alpha="0.9"
+        android:src="@drawable/night_bg" />    
+
+    <TextView
+        android:id="@+id/widget_city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="12dp"
+        android:textColor="#ffffffff"
+        android:textSize="35dp" />
+    
+    <LinearLayout
+        android:id="@+id/weather_info"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="30dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/widget_temperature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffffff"
+            android:textSize="50dp" 
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/current_layout_divider"
+            android:layout_width="83dip"
+            android:layout_height="0.25dip"
+            android:background="@drawable/light_gray" />
+
+        <TextView
+            android:id="@+id/widget_weather"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffffff"
+            android:textSize="35dp" />
+    </LinearLayout>
+   
+    <TextView
+            android:id="@+id/widget_updated_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"  
+            android:layout_alignParentBottom="true" 
+            android:layout_marginLeft="10dp"         
+            android:paddingBottom="5dp"                        
+            android:textColor="#ff888888"
+            android:textSize="18dp" />
+
+    <!-- 
+        android:scaleType="centerCrop"
+        android:scaleType="fitEnd"
+        android:paddingRight="5dp" 
+    -->
+
+	<RelativeLayout
+	    android:id="@+id/time_info"
+	    android:layout_width="fill_parent"
+	    android:layout_height="65dp"
+	    android:layout_toRightOf="@id/widget_city"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="5dp"
+	    >
+    <TextView
+        android:id="@+id/widget_local_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="34dp"
+        android:layout_marginTop="12dp"
+        android:textColor="#ffffffff"
+        android:textSize="45dp"/>
+     
+    <TextView 
+        android:id="@+id/year_month"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/widget_local_time"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="8dp"
+        android:textColor="#ffffffff"
+        android:textSize="20dp"/>
+    <TextView 
+        android:id="@+id/week"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/week"
+        android:layout_alignLeft="@id/year_month"
+        android:layout_marginTop="12dp"
+        android:textColor="#ffffffff"
+        android:textSize="20dp"
+        android:visibility="gone"/>
+    
+    </RelativeLayout>
+
+	<ImageView
+	    android:id="@+id/widget_picture"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@id/time_info"
+	    android:layout_alignParentRight="true"
+	    android:layout_marginBottom="5dp"
+	    />
+
+	<TextView
+	    android:id="@+id/widget_mark"
+	    android:layout_width="150dp"
+	    android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" 
+	    android:layout_alignParentRight="true"
+	    android:singleLine="true"
+	    android:paddingBottom="7dp"
+	    android:paddingRight="15dp"
+	    android:layout_marginRight="10dp"
+	    android:textColor="#ff888888"
+	    android:textSize="13dp"
+	    android:text="@string/mark" />
+	
+</RelativeLayout>

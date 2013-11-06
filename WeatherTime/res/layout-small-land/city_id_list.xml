@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/city_Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+         android:textSize="25dp"
+        android:layout_centerVertical="true" />
+    
+    <TextView
+        android:id="@+id/city_Adminarea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+         android:textSize="20dp"
+        android:layout_toRightOf="@+id/city_Name" />
+
+    <TextView
+        android:id="@+id/city_Country"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp" 
+         android:textSize="20dp"
+         android:layout_toRightOf="@+id/city_Adminarea"/>
+
+    <TextView
+        android:id="@+id/city_Id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:textSize="20dp"
+        android:layout_toRightOf="@+id/city_Country" />
+
+
+</RelativeLayout>

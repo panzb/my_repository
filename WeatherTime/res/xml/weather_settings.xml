@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListPreference
+        android:key="@string/auto_refresh_key"
+        android:title="@string/auto_refresh"
+        android:summary="@string/auto_refresh_describe"
+        android:defaultValue="3600"
+        android:entries="@array/refresh_interval"
+        android:entryValues="@array/interval_values"
+        />
+    
+    <ListPreference
+        android:key="@string/temperature_unit_key"
+        android:title="@string/temperature_unit"
+        android:summary="@string/temperature_unit_describe"
+        android:defaultValue="C"
+        android:entries="@array/temperature_unit"
+        android:entryValues="@array/temperature_unit_values"/>
+    
+</PreferenceScreen>

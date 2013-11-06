@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/widget_layout"
+	android:layout_width="fill_parent" 
+	android:layout_height="fill_parent"	
+	>
+    
+    <ImageView
+        android:id="@+id/day_night"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scaleType="fitXY"
+        android:alpha="0.9"
+        android:src="@drawable/night_bg" />    
+
+    <TextView
+        android:id="@+id/widget_city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:layout_marginLeft="12dp"
+        android:textColor="#ffffffff"
+        android:textSize="35dp" />
+    
+    <LinearLayout
+        android:id="@+id/weather_info"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="30dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/widget_temperature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffffff"
+            android:textSize="50dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/current_layout_divider"
+            android:layout_width="83dip"
+            android:layout_height="0.25dip"
+            android:background="@drawable/light_gray" />
+
+        <TextView
+            android:id="@+id/widget_weather"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffffff"
+            android:textSize="35dp" />
+    </LinearLayout>
+   
+    <TextView
+            android:id="@+id/widget_updated_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"  
+            android:layout_alignParentBottom="true" 
+            android:layout_marginLeft="10dp"         
+            android:paddingBottom="5dp"                        
+            android:textColor="#ff888888"
+            android:textSize="18dp" />
+
+    <!-- 
+        android:scaleType="centerCrop"
+        
+        android:scaleType="fitEnd"
+        android:paddingRight="5dp" 
+	    android:layout_centerInParent="true"
+    -->
+    
+    <LinearLayout 
+        android:id="@+id/space"
+        android:layout_width="40dp"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true">
+    </LinearLayout>
+
+	<LinearLayout
+	    android:id="@+id/time"
+	    android:layout_width="wrap_content"
+	    android:layout_height="fill_parent"
+	    android:layout_toLeftOf="@id/space"
+	    android:gravity="center"
+	    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/widget_local_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffffff"
+        
+        android:textSize="50dp" />
+
+    <TextView
+        android:id="@+id/week"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffffff"
+        android:textSize="20dp"
+        android:visibility="gone" />
+ 
+    <TextView 
+        android:id="@+id/year_month"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffffff"
+        android:textSize="20dp"/>
+    </LinearLayout>
+	
+	<ImageView
+	    android:id="@+id/widget_picture"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_centerVertical="true"
+	    android:layout_toLeftOf="@id/time"
+	    />
+	
+	<TextView
+	    android:id="@+id/widget_mark"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignBaseline="@+id/widget_updated_time"
+	    android:layout_alignBottom="@+id/widget_updated_time"
+	    android:layout_alignRight="@+id/time"
+	    android:text="@string/mark"
+	    android:textColor="#ff888888"
+	    android:textSize="13dp" />
+		
+</RelativeLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="refresh_interval">
+        <item>1 小时</item>
+        <item>3 小时</item>
+        <item>6 小时</item>
+        <item>12 小时</item>
+        <item>24 小时</item>
+        <item>手动更新</item>
+        </string-array>
+    <string-array name="interval_values">
+        <item>3600</item>
+        <item>10800</item>
+        <item>21600</item>
+        <item>43200</item>
+        <item>86400</item>
+        <item>0</item>
+    </string-array>
+    
+    <string-array name="temperature_unit">
+        <item>摄氏度</item>
+        <item>华氏度</item>
+    </string-array>
+    <string-array name="temperature_unit_values">
+        <item>C</item>
+        <item>F</item>
+    </string-array>
+    
+</resources>
