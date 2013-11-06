@@ -7,7 +7,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 public class Detail_Fragment extends Fragment {
-	/**
+	/**ddd
 	 * @see android.app.Activity#onCreate(Bundle)
 	 */
 	@Override
